@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;400;700&display=swap" rel="stylesheet">
+    <link 
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" 
+    crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link 
+    rel="stylesheet" 
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <!--Menú principal-->
+    <div class="container-header">
+        <header>
+            <div class="logo">
+                <a href="#"><strong>Name</strong></a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#aboutme" onclick="seleccionar()">ABOUT ME</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#resume" onclick="seleccionar()">RESUME</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#contact" onclick="seleccionar()">CONTACT ME</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!--inicio-->
+    <section id="home" class="home">
+        <div class="container-banner">
+            <div class="container-img">
+                <img src="" alt="photo">
+            </div>
+            <h1>Name</h1>
+            <h2>Profession</h2>
+            <div class="socialmedia">
+                <a href="#"><i class="bi bi-github"></i></a>
+                <a href="#"><i class="bi bi-linkedin"></i></a>
+                <a href="#"><i class="bi bi-twitter"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!--sobre mí-->
+    <section id="aboutme" class="aboutme">
+        <div class="container-section">
+            <h2><strong>About Me</strong></h2>
+            <p></p>
+            <button><a class="pdf" download="" href="">Download Resume</a>
+                <i class="bi bi-file-earmark-arrow-down-fill"></i>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+
+    <!--Habilidades-->
+    <section id="skills" class="skills">
+        <h2><strong>Skills</strong></h2>
+        <div class="line">
+            <div class="col">
+                <h3>Technical Skills</h3>
+                <div class="container-skill">
+                    <div class="tech-skill">
+                        <i class="fa-brands fa-js"></i>
+                        <span>JS</span>
+                    </div>
+                    <div class="tech-skill">
+                        <i class="fa-brands fa-html5"></i>
+                        <span>HTML</span>
+                    </div>
+                    <div class="tech-skill">
+                        <i class="fa-brands fa-css3"></i>
+                        <span>CSS</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <h3>Professional Skills</h3>
+                <div class="container-skill">
+                    <div class="prof-skill">
+                        <i class="fa-solid fa-people-group"></i>
+                        <span>Teamwork</span>
+                    </div>
+                    <div class="prof-skill">
+                        <i class="bi bi-rocket-takeoff"></i>
+                        <span>Problem Solving</span>
+                    </div>
+                    <div class="prof-skill">
+                        <i class="bi bi-palette"></i>
+                        <span>Creativity</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Curriculum-->
+    <section id="resume" class="resume">
+        <div class="container-resume">
+            <h2><strong>Resume</strong></h2>
+            <div class="line">
+                <div class="col">
+                    <h3>Education</h3>
+                    <div class="item left">
+                        <h4>title</h4>
+                        <span class="inst">University</span>
+                        <span class="date">age</span>
+                    </div>
+                    <div class="item left">
+                        <h4>title</h4>
+                        <span class="inst">University</span>
+                        <span class="date">age</span>
+                    </div>
+                    <div class="item left">
+                        <h4>title</h4>
+                        <span class="inst">University</span>
+                        <span class="date">age</span>
+                    </div>
+                </div>
+                <div class="col">
+                    <h3>Work Experience</h3>
+                    <div class="item right">
+                        <span class="cargo">job</span>
+                        <h4>company</h4>
+                        <span class="date">age</span>
+                        <p>description</p>
+                    </div>
+                    <div class="item right">
+                        <span class="cargo">job</span>
+                        <h4>company</h4>
+                        <span class="date">age</span>
+                        <p>description</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--portafolio-->
+    <section id="portfolio" class="portfolio">
+        <div class="container-portfolio">
+            <h2><strong>Portfolio</strong></h2>
+            <div class="gallery">
+                <div class="project">
+                    <img src="" alt="img1">
+                    <div class="overlay">
+                        <h3><a href="">title</a></h3>
+                        <p>description</p>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="" alt="img1">
+                    <div class="overlay">
+                        <h3><a href="">title</a></h3>
+                        <p>description</p>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="" alt="img1">
+                    <div class="overlay">
+                        <h3><a href="">title</a></h3>
+                        <p>description</p>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="" alt="img1">
+                    <div class="overlay">
+                        <h3><a href="">title</a></h3>
+                        <p>description</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Contactarme-->
+    <section id="contact" class="contact">
+        <div class="container-contact">
+            <h2><strong>Conctact Me</strong></h2>
+            <!--formulario-->
+            <div class="line">
+                <div class="col">
+                    <input type="text" placeholder="Name"/>
+                    <input type="number" placeholder="Phone number"/>
+                    <input type="text" placeholder="e-mail"/>
+                    <input type="text" placeholder="subject"/>
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                    <button>Send Message <i class="fa-regular fa-paper-plane"></i>
+                    <span class="overlay"></span></button>
+                </div>
+                <!--mapa-->
+                <div class="col">
+                    <img src="./img/map.jpg" alt="map">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="bi bi-geo-alt-fill"></i>
+                                ubication
+                            </li>
+                            <li>
+                                <i class="bi bi-phone-fill"></i>
+                                phone number
+                            </li>
+                            <li>
+                                <i class="bi bi-envelope-at"></i>
+                                e-mail
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--footer-->
+    <footer>
+        <a href="#home" class="up">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="socialmedia">
+            <a href="#"><i class="bi bi-github"></i></a>
+            <a href="#"><i class="bi bi-linkedin"></i></a>
+            <a href="#"><i class="bi bi-twitter"></i></a>
+        </div>
+    </footer>
+
+    <script src="indexport.js"></script>
+</body>
+</html>
